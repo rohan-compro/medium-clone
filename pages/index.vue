@@ -6,7 +6,8 @@
 </template>
 
 <script setup>
-
+const appName = "Medium Clone";
+            const updatedAppName = "BlueSky Blogpost";
 </script>
 
 <style scoped>

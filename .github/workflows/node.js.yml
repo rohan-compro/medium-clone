@@ -28,6 +28,10 @@ jobs:
           cache: 'npm'
      - name: Lint Code Base
        uses: github/super-linter@v4 
+       env:
+        VALIDATE_ALL_CODEBASE: false
+        DEFAULT_BRANCH: "main"
+        GITHUB_TOKEN: ${{ secrets.MEDIUM_TOKEN }}
         
      - run: npm ci
      - run: npm run build
