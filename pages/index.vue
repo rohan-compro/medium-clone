@@ -13,5 +13,6 @@ const appName = "Medium Clone";
 <style scoped>
 .bg-color{
     background-color: aquamarine;
+    color: brown;
 }
 </style>
