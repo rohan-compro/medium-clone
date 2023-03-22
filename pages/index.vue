@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-color">
         <h1>Hey!</h1>
         <h4>This is medium clone landing page</h4>
     </div>
@@ -11,5 +11,7 @@ const appName = "Medium Clone";
 </script>
 
 <style scoped>
-
+.bg-color{
+    background-color: aquamarine;
+}
 </style>

@@ -23,15 +23,9 @@ jobs:
      -  name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          fetch-depth: 0
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-     - name: Lint Code Base
-       uses: github/super-linter@v4 
-       env:
-        VALIDATE_ALL_CODEBASE: false
-        DEFAULT_BRANCH: "main"
-        GITHUB_TOKEN: ${{ secrets.MEDIUM_TOKEN }}
-        
-     - run: npm ci
-     - run: npm run build
+     -  name: Build and Test
+        run: npm ci
+          npm run build
+          npm test
